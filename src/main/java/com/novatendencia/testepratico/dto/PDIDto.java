@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class PDIDto {
     @NotBlank
-    private String funcionario;
+    private String funcionarioNome;
     private Long funcionarioId;
  
     @NotBlank
@@ -21,16 +21,16 @@ public class PDIDto {
     }
   
     public PDIDto(@NotBlank String funcionario, Long funcionarioId, @NotBlank String avaliacao) {
-        this.funcionario = funcionario;
+        this.funcionarioNome = funcionario;
         this.funcionarioId = funcionarioId;
         this.avaliacao = avaliacao;
     }
 
-    public String getFuncionario() {
-        return funcionario;
+    public String getFuncionarioNome() {
+        return funcionarioNome;
     }
-    public void setFuncionario(String funcionario) {
-        this.funcionario = funcionario;
+    public void setFuncionarioNome(String funcionarioNome) {
+        this.funcionarioNome = funcionarioNome;
     }
     public String getAvaliacao() {
         return avaliacao;

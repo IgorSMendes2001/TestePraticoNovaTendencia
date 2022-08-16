@@ -1,5 +1,6 @@
 package com.novatendencia.testepratico.dto;
 
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Length;

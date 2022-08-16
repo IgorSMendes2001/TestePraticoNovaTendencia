@@ -28,7 +28,7 @@ public class PDIService {
 
 		boolean existe = pdiRepository.existsById(id);
 		if (existe == true) {
-			PDI pdi = pdiRepository.getReferenceById(id);
+			PDI pdi = pdiRepository.procurarPorId(id);
 			PDIDto pdiDTO = modelMapper.map(pdi, PDIDto.class);
 			return pdiDTO;
 		}
